@@ -2,10 +2,9 @@ import React from 'react'
 import { Typewriter } from 'react-simple-typewriter'
 
 import { motion } from 'framer-motion'
-import { WavyBackground } from '../backgrounds/Wavy'
 import { STRINGS } from '../../constants/Strings'
 import { AuroraBackground } from '../backgrounds/Aurora'
-import "../../constants/styles/Welcome.css"
+import "../../constants/styles/Front.css"
 
 function Welcome() {
   return (
