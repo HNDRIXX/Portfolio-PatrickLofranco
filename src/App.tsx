@@ -1,16 +1,16 @@
 "use client";
 import React, { useState } from 'react'
+
+import Welcome from './components/sections/Front';
+import Portfolio from './components/sections/Portfolio';
 import './App.css'
-import Welcome from './components/sections/Welcome';
-import { Portfolio } from './components/sections/Portfolio';
 
 function App() {
   return (
-    <div>
+    <main>
       <Welcome />
-
       <Portfolio />
-    </div>
+    </main>
   )
 }
 
