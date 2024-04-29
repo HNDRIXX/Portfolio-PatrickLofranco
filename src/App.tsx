@@ -2,14 +2,14 @@
 import React, { useState } from 'react'
 
 import Welcome from './components/sections/Front';
-import Portfolio from './components/sections/Portfolio';
+import Projects from './components/sections/Projects';
 import './App.css'
 
 function App() {
   return (
     <main>
       <Welcome />
-      <Portfolio />
+      <Projects />
     </main>
   )
 }
