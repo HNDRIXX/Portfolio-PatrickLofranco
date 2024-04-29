@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card-body:hover {
+        /* @apply shadow-2xl shadow-indigo-500/40 transition-shadow  */
+    }
+}
+
+.image-card:hover {
+    transition: ease-in-out .5s;
+    filter: drop-shadow(0 0 0.50rem rgb(113, 96, 212));
+}
