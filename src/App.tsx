@@ -1,4 +1,3 @@
-"use client";
 import { lazy } from 'react'
 
 const Welcome = lazy(() => import('./components/sections/Front'));

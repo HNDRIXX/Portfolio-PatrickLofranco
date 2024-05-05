@@ -14,4 +14,7 @@ export const STRINGS = {
 
     prjTitleFour: 'PWD Accessibility Locator Map',
     prjDescFour: `PWD Accessibility Locator Map is my first freelancing project. This mobile application provides information about the user's searched location, such as whether or not the location is accessible to people with disabilities. It also provides a comment section for each PWD person to provide input on how the services are provided to them`,
+
+    projTitleWebI: 'BHive',
+    projDescWebI: 'BHive is my On The Job Training Project in DENR EMB MIMAROPA 4B. This system features a interactable Organizational Chart that can be modify, add, sort, and delete for each employee and staff member. With a Floor plan Locator, which displays the particular location and attendance status of every employee that is connected to the face-recognition device.',
 }
