@@ -11,6 +11,7 @@ import ProjMobileII from '../../assets/images/serbisyofinder.png';
 import ProjMobileIII from '../../assets/images/librarymobile.png';
 import ProjMobileIV from '../../assets/images/pwdmobile.png';
 import ProjWebI from '../../assets/images/bhive.jpg';
+import ProjWebII from '../../assets/images/udmclinic.jpg';
 
 function Projects() {
     const [data, setData] = useState([
@@ -43,8 +44,16 @@ function Projects() {
             title: STRINGS.projTitleWebI,
             description: STRINGS.projDescWebI,
             height: '20rem',
-            width: '50rem',
-            leftSpace: '3'
+            width: '40rem',
+            leftSpace: '10'
+        },
+        {
+            image: ProjWebII,
+            title: STRINGS.projTitleWebI,
+            description: STRINGS.projDescWebI,
+            height: '20rem',
+            width: '40rem',
+            leftSpace: '10'
         },
     ])
 
