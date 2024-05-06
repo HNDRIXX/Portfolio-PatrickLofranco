@@ -4,9 +4,16 @@
 
 
 @layer components {
+
   #root {
-    @apply bg-zinc-900 overflow-hidden
+    @apply bg-zinc-900 
   }
+}
+
+* {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 #root {
   /* max-width: 1280px; */

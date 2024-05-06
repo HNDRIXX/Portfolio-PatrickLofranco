@@ -58,10 +58,6 @@ function Welcome() {
             </p>
 
             <div className='row'>
-              {/* <p className='prefix'>
-                {STRINGS.prefixName}
-              </p> */}
-
               <p className='name'>
                 {STRINGS.name}
               </p>
@@ -69,7 +65,7 @@ function Welcome() {
 
             <p className='typewriter'>
               <Typewriter
-                words={['Mobile Developer.', 'Web Developer.', 'Designer.']}
+                words={['mobile developer.', 'web developer.', 'designer.']}
                 loop={true}
                 cursor
                 cursorStyle='|'

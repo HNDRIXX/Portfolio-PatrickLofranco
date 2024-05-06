@@ -1,8 +1,7 @@
 import { STRINGS } from "./Strings";
+import { ARRAY } from "./Array";
 
-import HRDotNetMobile from '../assets/images/hrdotnetmobile.png';
-
-export default {
+export {
     STRINGS,
-    HRDotNetMobile
+    ARRAY
 }

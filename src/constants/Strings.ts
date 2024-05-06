@@ -1,7 +1,11 @@
 export const STRINGS = {
-    hello: "My Portfolio",
+    hello: "my portfolio",
     prefixName: `Lorem`,
     name: "Patrick William Lofranco",
+
+    sectionTitleI: 'about me.',
+    sectionTitleII: 'projects.',
+    sectionTitleIII: 'get in touch.',
 
     prjTitleOne: 'HRDotNet Mobile',
     prjDescOne: 'HRDotNet Mobile is a cross-platform HRIS mobile application that I developed for Intellismart Technology. Improving HR operations for more efficiency, employee engagement, and experience.',
@@ -17,4 +21,13 @@ export const STRINGS = {
 
     projTitleWebI: 'BHive',
     projDescWebI: 'BHive is my On The Job Training Project in DENR EMB MIMAROPA 4B. This system features a interactable Organizational Chart that can be modify, add, sort, and delete for each employee and staff member. With a Floor plan Locator, which displays the particular location and attendance status of every employee that is connected to the face-recognition device.',
+
+    projTitleWebII: 'UDM Clinic System',
+    projDescWebII: 'Universidad De Manila Clinic System is my second-year group project. With a focus on improving user experience and efficiency, revamped system seamlessly integrates appointment scheduling, medical record management, and communication between patients and healthcare providers.',
+
+    projTitleWebIII: 'Snaps',
+    projDescWebIII: `Welcome to Snaps, your go-to platform for sharing and discovering captivating moments through images. Embrace the joy of storytelling as you post your snapshots in a beautiful feed. Unleash your creativity, one 'Snap' at a time, and let the world be captivated by your visual tales.`,
+
+    projTitleWebIV: 'Web Library Management System',
+    projDescWebIV: 'Web Library Management System is the web version of my Mobile Library System Management Capstone Project. The Web Library Management System serves as an expansion of the Mobile Library System Management, offering users a web-based interface for enhanced accessibility.',
 }
