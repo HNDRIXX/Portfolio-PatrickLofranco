@@ -27,7 +27,8 @@ import IconHTML from '../assets/icons/html.svg'
 import IconCSS from '../assets/icons/css.svg'
 import IconJS from '../assets/icons/javascript.svg'
 import IconBootstrap from '../assets/icons/bootstrap.svg'
-import IconCodeiniter from '../assets/icons/codeigniter.svg'
+import IconCodeigniter from '../assets/icons/codeigniter.svg'
+import IconTensorflow from '../assets/icons/tensorflow.svg'
 import IconMySQL from '../assets/icons/mysql.svg'
 import IconPython from '../assets/icons/python.svg'
 import IconDjango from '../assets/icons/django.svg'
@@ -35,12 +36,15 @@ import IconLaravel from '../assets/icons/laravel.svg'
 import IconPostgre from '../assets/icons/postgre.svg'
 import IconTailwind from '../assets/icons/tailwind.svg'
 import IconNextJS from '../assets/icons/nextjs.svg'
+import IconReactWhite from '../assets/icons/reactwhite.svg'
 
 import IconGithub from '../assets/icons/github.svg'
 import IconGmail from '../assets/icons/gmail.svg'
 import IconFB from '../assets/icons/fb.svg'
 
 export const ARRAY = {
+    Skills: ['mobile developer.', 'web developer.', 'fullstack developer.', 'ui designer.'],
+
     Projects: [
         {
             image: ProjMobileI,
@@ -84,6 +88,7 @@ export const ARRAY = {
                 { src: IconAndroidStudio },
                 { src: IconJava },
                 { src: IconFirebase },
+                { src: IconTensorflow },
                 { src: IconTM },
             ]
         },
@@ -112,7 +117,7 @@ export const ARRAY = {
                 { src: IconCSS },
                 { src: IconBootstrap },
                 { src: IconJS },
-                { src: IconCodeiniter },
+                { src: IconCodeigniter },
                 { src: IconMySQL },
             ]
         },
@@ -160,6 +165,7 @@ export const ARRAY = {
     ],
 
     Stack: [
+        { src: IconReactWhite },
         { src: IconNextJS },
         { src: IconTailwind }
     ],

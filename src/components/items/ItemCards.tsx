@@ -2,7 +2,8 @@ import { memo } from 'react';
 import { Fade } from 'react-awesome-reveal';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { CardBody, CardContainer, CardItem } from '../ui/Card';
-import '../../constants/styles/ItemCards.css';
+import IconGithub from '../../assets/icons/githubblack.svg'
+import '../../constants/styles/Styles.css';
 
 type Props = {
     image: string
@@ -16,7 +17,10 @@ type Props = {
 const ItemCards = memo(({ image, title, description, height, width, icons }: Props) => {
     return (
         <Fade>
-            <div className='h-full my-[4em] flex items-center justify-center'>
+            <div className='
+                h-full my-[4em] items-center justify-center overflow-hidden
+                lg:flex
+            '>
                 <CardContainer>
                     <CardBody className={`card-body w-auto h-auto ease-in-out`}>
                         <CardItem translateZ='50' className='w-full'>
@@ -24,7 +28,7 @@ const ItemCards = memo(({ image, title, description, height, width, icons }: Pro
                                 src={image}
                                 width={width}
                                 height={height}
-                                className={`image-card rounded-xl object-contain ease-in-out`}
+                                className={`image imageCard rounded-xl object-contain ease-in-out px-3`}
                                 draggable={false}
                                 alt='Preview'
                             />
@@ -32,10 +36,31 @@ const ItemCards = memo(({ image, title, description, height, width, icons }: Pro
                     </CardBody>
                 </CardContainer>
 
-                <div className={`ml-12`}>
-                    <p className='text-3xl font-medium text-white dark:text-white'>{title}</p>
+                <div className={`lg:px-0 lg:pl-10 md:px-32 px-10`}>
+                    <div>
+                        <p className='text-2xl font-medium text-white dark:text-white 
+                            md:text-3xl
+                            lg:text-3xl
+                        '>
+                            {title}
+                        </p>
 
-                    <p className='text-white text-s max-w-lg mt-2 font-extralight dark:text-white'>
+                        <a className='flex flex-row items-center gap-2 bg-white rounded-lg py-1 mt-2 mb-5 w-24 justify-center cursor-pointer'>
+                            <LazyLoadImage
+                                src={IconGithub}
+                                className='w-4'
+                                draggable={false}
+                                alt='Preview'
+                            />
+
+                            <p className='text-black text-sm font-semibold spacing tracking-tight'>Github</p>
+                        </a>
+                    </div>
+
+                    <p className='text-white text-xs mt-2 font-extralight dark:text-white
+                        md:text-sm
+                        lg:text-s lg:max-w-lg
+                    '>
                         {description}
                     </p>
 
@@ -46,7 +71,7 @@ const ItemCards = memo(({ image, title, description, height, width, icons }: Pro
                                 src={item.src}
                                 width={30}
                                 height={30}
-                                className='mr-3'
+                                className='image mr-3 w-5 md:w-5 lg:w-6 '
                                 alt='Stack'
                             />
                         ))}

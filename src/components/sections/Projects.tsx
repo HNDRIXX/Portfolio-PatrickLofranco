@@ -2,21 +2,22 @@
 
 import { useState } from "react";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
-import { FixedSizeList as List } from "react-window";
-
 import ItemCards from "../items/ItemCards";
 import { ARRAY, STRINGS } from "../../constants";
 
 function Projects() {
-    const [data, setData] = useState(ARRAY.Projects)
+    const [data] = useState<any>(ARRAY.Projects)
 
     return (
         <div>
-            <p className="font-regular text-white text-center text-6xl">
+            <p className="font-regular text-white text-center text-5xl 
+                md:text-6xl
+                lg:text-6xl
+            ">
                 {STRINGS.sectionTitleII}
             </p>
 
-            {data.map((item, index) => (
+            {data.map((item: any, index: number) => (
                 <LazyLoadComponent>
                     <ItemCards
                         image={item.image}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    * { 
+        @apply select-none leading-[1.5] [color-scheme:dark];
+    }
+    
+    :root { 
+        @apply ease-in-out bg-zinc-900;
+    }
+    
+    body { 
+        @apply p-0 m-0 w-full;
+    }
+
+    .container {
+        @apply absolute flex flex-row min-h-screen justify-center items-center max-w-4xl mx-auto pb-20;
+    }
+
+    .greet {
+        @apply text-xl text-white font-extralight text-center mb-2
+        md:text-2xl 
+        lg:text-3xl ;
+    }
+
+    .row {
+        @apply flex flex-row text-7xl items-center
+    }
+    
+    .name {
+        @apply text-4xl px-20 text-white font-semibold text-center
+        md:text-6xl px-0
+        lg:text-7xl px-0;
+    }
+
+    .typewriter {
+        @apply text-lg mt-2 text-white font-light tracking-wide text-center 
+        md:text-2xl 
+        lg:mt-5 lg:text-3xl
+    }
+
+    /* About */
+    .aboutTitle { @apply absolute font-normal text-white text-center text-6xl md:text-8xl lg:text-8xl;
+    }
+}                                                                               
+
+* { font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif; }
+
+/* Native CSS */
+/* Image Card Projects */
+.imageCard:hover {
+    transition: ease-in-out .5s;
+    filter: drop-shadow(0 0 0.50rem rgb(113, 96, 212));
+}
+
+/* Projects */
+.image {
+    image-rendering: pixelated;
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+/* About */
+.aboutImgContainer {
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
+}
+
+.aboutImg {
+    position: relative;
+    top: -30px;
+    filter: drop-shadow(0 0 0.75rem #111111);
+}

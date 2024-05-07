@@ -1,43 +1,13 @@
 // import React from 'react'
 import { Typewriter } from 'react-simple-typewriter'
-
 import { motion } from 'framer-motion'
-import { STRINGS } from '../../constants/Strings'
+import { STRINGS, ARRAY } from '../../constants'
 import { AuroraBackground } from '../backgrounds/Aurora'
-import "../../constants/styles/Front.css"
+
+import "../../constants/styles/Styles.css"
 
 function Welcome() {
   return (
-    // <WavyBackground className='container'>
-    //     <div>
-    //         <p className='greet'>
-    //             {STRINGS.hello}
-    //         </p>
-
-    //         <div className='row'>
-    //             <p className='prefix'>
-    //                 {STRINGS.prefixName} 
-    //             </p>
-
-    //             <p className='name'>
-    //                 {STRINGS.name}
-    //             </p>
-    //         </div>
-
-    //         <p className='typewriter'>
-    //             <Typewriter
-    //                 words={['Mobile Developer.', 'Web Developer.', 'Designer.']}
-    //                 loop={true}
-    //                 cursor
-    //                 cursorStyle='|'
-    //                 typeSpeed={100}
-    //                 cursorColor='white'
-    //                 cursorBlinking={true}
-    //             />
-    //         </p>
-
-    //     </div>
-    // </WavyBackground>
     <div>
       <AuroraBackground
         className='dark:bg-zinc-950'
@@ -65,7 +35,7 @@ function Welcome() {
 
             <p className='typewriter'>
               <Typewriter
-                words={['mobile developer.', 'web developer.', 'designer.']}
+                words={ARRAY.Skills}
                 loop={true}
                 cursor
                 cursorStyle='|'
