@@ -2,33 +2,31 @@ import { memo } from 'react';
 import { Fade } from 'react-awesome-reveal';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { CardBody, CardContainer, CardItem } from '../ui/Card';
+
+import { STRINGS } from '../../constants';
 import IconGithub from '../../assets/icons/githubblack.svg'
 import '../../constants/styles/Styles.css';
 
 type Props = {
-    image: string
-    title: string
-    description: string
-    height?: number
-    width? : number
-    icons? : any[]
+    item: any
 }
 
-const ItemCards = memo(({ image, title, description, height, width, icons }: Props) => {
+const ItemCards = memo(({ item }: Props) => {
     return (
         <Fade>
-            <div className='
-                h-full my-[4em] items-center justify-center overflow-hidden
-                lg:flex
-            '>
+            <div className={`
+                h-full items-center justify-center overflow-hidden my-10
+                lg:flex lg:snap-always lg:snap-center lg:my-[10em]
+            `}
+            >
                 <CardContainer>
                     <CardBody className={`card-body w-auto h-auto ease-in-out`}>
                         <CardItem translateZ='50' className='w-full'>
                             <LazyLoadImage
-                                src={image}
-                                width={width}
-                                height={height}
-                                className={`image imageCard rounded-xl object-contain ease-in-out px-3`}
+                                src={item?.image}
+                                width={item?.width}
+                                height={item?.height}
+                                className={`image imageCard rounded-xl object-contain ease-in-out`}
                                 draggable={false}
                                 alt='Preview'
                             />
@@ -42,10 +40,14 @@ const ItemCards = memo(({ image, title, description, height, width, icons }: Pro
                             md:text-3xl
                             lg:text-3xl
                         '>
-                            {title}
+                            {item?.title}
                         </p>
 
-                        <a className='flex flex-row items-center gap-2 bg-white rounded-lg py-1 mt-2 mb-5 w-24 justify-center cursor-pointer'>
+                        <a 
+                            className='flex flex-row items-center gap-2 bg-white rounded-lg py-1 mt-2 mb-5 w-24 justify-center cursor-pointer'
+                            target='_blank'
+                            href={item?.url}
+                        >
                             <LazyLoadImage
                                 src={IconGithub}
                                 className='w-4'
@@ -53,25 +55,27 @@ const ItemCards = memo(({ image, title, description, height, width, icons }: Pro
                                 alt='Preview'
                             />
 
-                            <p className='text-black text-sm font-semibold spacing tracking-tight'>Github</p>
+                            <p className='text-black text-sm font-semibold spacing tracking-tight'>
+                                {STRINGS.github}
+                            </p>
                         </a>
                     </div>
 
                     <p className='text-white text-xs mt-2 font-extralight dark:text-white
-                        md:text-sm
-                        lg:text-s lg:max-w-lg
+                        md:text-base
+                        lg:text-base lg:max-w-lg
                     '>
-                        {description}
+                        {item?.description}
                     </p>
 
                     <div className='mt-5 flex flex-row'>
-                        {icons?.map((item, index) => (
+                        {item?.icons?.map((item : any, index: number) => (
                             <LazyLoadImage
                                 key={index}
                                 src={item.src}
                                 width={30}
                                 height={30}
-                                className='image mr-3 w-5 md:w-5 lg:w-6 '
+                                className='icons image mr-3 w-5 md:w-5 lg:w-6 '
                                 alt='Stack'
                             />
                         ))}

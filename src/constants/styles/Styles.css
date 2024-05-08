@@ -43,11 +43,13 @@
     }
 
     /* About */
-    .aboutTitle { @apply absolute font-normal text-white text-center text-6xl md:text-8xl lg:text-8xl;
-    }
+    .aboutTitle { @apply relative -bottom-28 font-normal text-white text-center text-6xl md:text-8xl lg:text-8xl; }
 }                                                                               
 
-* { font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif; }
+* { 
+    font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif; 
+    /* transition: ease-in-out .3s all;  */
+} 
 
 /* Native CSS */
 /* Image Card Projects */
@@ -72,6 +74,10 @@
 
 .aboutImg {
     position: relative;
-    top: -30px;
+    top: 10px;
     filter: drop-shadow(0 0 0.75rem #111111);
+}
+
+.icons:hover {
+    transform: scale(0.9);
 }

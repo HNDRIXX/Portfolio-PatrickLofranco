@@ -8,7 +8,7 @@ import "../../constants/styles/Styles.css"
 
 function Welcome() {
   return (
-    <div>
+    <div className="lg:snap-always lg:snap-center">
       <AuroraBackground
         className='dark:bg-zinc-950'
       >

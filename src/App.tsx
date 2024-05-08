@@ -4,20 +4,18 @@ const Welcome = lazy(() => import('./components/sections/Front'))
 const About = lazy(() => import('./components/sections/About'))
 const Projects = lazy(() => import('./components/sections/Projects'))
 const Socials = lazy(() => import('./components/sections/Socials'))
-const Footer = lazy(() => import('./components/sections/Footer'))
 
 import './constants/styles/Styles.css'
 import { LazyLoadComponent } from 'react-lazy-load-image-component'
 
 function App() {
   return (
-    <main>
+    <main className="snap-y snap-mandatory scroll-smooth overflow-y-scroll h-screen flex-grow z-0">
       <LazyLoadComponent>
         <Welcome />
         <About />
         <Projects />
         <Socials />
-        <Footer />
       </LazyLoadComponent>
     </main>
   )

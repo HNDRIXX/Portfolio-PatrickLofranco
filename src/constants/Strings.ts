@@ -2,6 +2,7 @@ export const STRINGS = {
     hello: "my portfolio",
     prefixName: `Lorem`,
     name: "Patrick William Lofranco",
+    github: 'Github',
 
     sectionTitleI: 'about me.',
     sectionTitleII: 'projects.',
@@ -32,5 +33,5 @@ export const STRINGS = {
     projDescWebIV: 'Web Library Management System is the web version of my Mobile Library System Management Capstone Project. The Web Library Management System serves as an expansion of the Mobile Library System Management, offering users a web-based interface for enhanced accessibility.',
 
     aboutDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odio fugiat autem in facere atque, adipisci assumenda obcaecati impedit ex at reiciendis aut illo unde nulla ratione? Nihil, commodi ducimus.',
-    socialDesc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod animi quos dolorum aspernatur itaque asperiores recusandae officia, iste praesentium aliquam porro ipsum error quae sint. Sit fugiat asperiores odit deleniti.',
+    socialDesc: `Passionate about programming and problem-solving, I'm excited to hear about your project – get in touch, and let's embark on a collaborative coding adventure.`,
 }

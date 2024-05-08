@@ -20,12 +20,7 @@ function Projects() {
             {data.map((item: any, index: number) => (
                 <LazyLoadComponent>
                     <ItemCards
-                        image={item.image}
-                        title={item.title}
-                        description={item.description}
-                        height={item.height}
-                        width={item.width}
-                        icons={item.icons}
+                        item={item}
                         key={index}
                     />
                 </LazyLoadComponent>

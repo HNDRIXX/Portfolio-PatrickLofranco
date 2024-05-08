@@ -6,12 +6,12 @@ import '../../constants/styles/Styles.css'
 
 function About() {
     return (
-        <div className='aboutContainer flex flex-col items-center my-5'>
+        <div className='aboutContainer flex flex-col items-center my-32'>
             <p className='aboutTitle'>
                 {STRINGS.sectionTitleI}
             </p>
 
-            <div className='aboutImgContainer'>
+            <div className='aboutImgContainer lg:snap-always lg:snap-center'>
                 <LazyLoadImage
                     src={ImgMe}
                     width={630}
@@ -24,8 +24,8 @@ function About() {
 
             <p className='aboutDesc w-96 text-xs relative bottom-32 
                 sm: px-10
-                md:w-2/3 md:text-sm
-                lg:text-sm lg:w-2/4 lg:bottom-40
+                md:w-2/3 md:text-base
+                lg:text-base lg:w-2/4 lg:bottom-40
             '>
                 {STRINGS.aboutDesc}
             </p>

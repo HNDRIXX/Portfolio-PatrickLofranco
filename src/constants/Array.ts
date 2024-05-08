@@ -43,10 +43,11 @@ import IconGmail from '../assets/icons/gmail.svg'
 import IconFB from '../assets/icons/fb.svg'
 
 export const ARRAY = {
-    Skills: ['mobile developer.', 'web developer.', 'fullstack developer.', 'ui designer.'],
+    Skills: ['mobile developer.', 'web developer.', 'fullstack developer.', 'UI designer.'],
 
     Projects: [
         {
+            // HRDotNet
             image: ProjMobileI,
             title: STRINGS.prjTitleOne,
             description: STRINGS.prjDescOne,
@@ -65,11 +66,13 @@ export const ARRAY = {
             ]
         },
         {
+            // Serbisyofinder
             image: ProjMobileII,
             title: STRINGS.prjTitleTwo,
             description: STRINGS.prjDescTwo,
             width: 330,
             height: 100,
+            url: 'https://github.com/HNDRIXX/SerbisyoFinder',
             icons: [
                 { src: IconAndroid },
                 { src: IconAndroidStudio },
@@ -78,11 +81,13 @@ export const ARRAY = {
             ]
         },
         {
+            // Mobile Library
             image: ProjMobileIII,
             title: STRINGS.prjTitleThree,
             description: STRINGS.prjDescThree,
             width: 250,
             height: 100,
+            url: 'https://github.com/HNDRIXX/Library-Android-Application',
             icons: [
                 { src: IconAndroid },
                 { src: IconAndroidStudio },
@@ -93,6 +98,7 @@ export const ARRAY = {
             ]
         },
         {
+            // PWD Accessibility Mobile App
             image: ProjMobileIV,
             title: STRINGS.prjTitleFour,
             description: STRINGS.prjDescFour,
@@ -106,12 +112,14 @@ export const ARRAY = {
             ]
         },
         {
+            // Bhive
             image: ProjWebI,
             title: STRINGS.projTitleWebI,
             description: STRINGS.projDescWebI,
             height: 100,
             width: 600,
-            leftSpace: '10',
+            gap: true,
+            url: 'https://github.com/HNDRIXX/OJT-Project-DENR-EMB-MIMAROPA/tree/master/-%20Sample%20Pictures',
             icons: [
                 { src: IconHTML },
                 { src: IconCSS },
@@ -122,12 +130,14 @@ export const ARRAY = {
             ]
         },
         {
+            // UDM CLinic
             image: ProjWebII,
             title: STRINGS.projTitleWebII,
             description: STRINGS.projDescWebII,
             height: 100,
             width: 600,
             leftSpace: '10',
+            url: 'https://github.com/HNDRIXX/Library-Android-Application',
             icons: [
                 { src: IconPython },
                 { src: IconDjango },
@@ -135,12 +145,13 @@ export const ARRAY = {
             ]
         },
         {
+            // Snaps
             image: ProjWebIII,
             title: STRINGS.projTitleWebIII,
             description: STRINGS.projDescWebIII,
             height: 100,
             width: 600,
-            leftSpace: '10',
+            url: 'https://github.com/HNDRIXX/Snaps/tree/main/-%20Sample%20Pictures',
             icons: [
                 { src: IconLaravel },
                 { src: IconBootstrap },
@@ -148,12 +159,13 @@ export const ARRAY = {
             ]
         },
         {
+            // Web Library Management System 
             image: ProjWebIV,
             title: STRINGS.projTitleWebIV,
             description: STRINGS.projDescWebIV,
             height: 100,
             width: 595,
-            leftSpace: '10',
+            url: 'https://github.com/HNDRIXX/Library-Web/tree/main/-%20Sample%20Pictures',
             icons: [
                 { src: IconHTML },
                 { src: IconCSS },
@@ -171,7 +183,7 @@ export const ARRAY = {
     ],
 
     Socials: [
-        { src: IconGithub },
+        { src: IconGithub, url: 'https://github.com/HNDRIXX'},
         { src: IconGmail },
         { src: IconFB }
     ]
