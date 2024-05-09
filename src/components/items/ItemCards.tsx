@@ -40,7 +40,7 @@ const ItemCards = memo(({ item, index }: Props) => {
 
                         {item?.url && (
                             <a 
-                                className='linkButton'
+                                className='scale linkButton'
                                 target='_blank'
                                 href={item?.url}
                             >

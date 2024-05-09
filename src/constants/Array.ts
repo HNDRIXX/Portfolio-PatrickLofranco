@@ -87,7 +87,7 @@ export const ARRAY = {
             description: STRINGS.prjDescThree,
             width: 250,
             height: 100,
-            url: 'https://github.com/HNDRIXX/Library-Android-Application',
+            url: 'https://github.com/HNDRIXX/Library-Android-Application/blob/main/-%20Sample%20Pictures/01.Login.jpg',
             icons: [
                 { src: IconAndroid },
                 { src: IconAndroidStudio },
@@ -119,7 +119,7 @@ export const ARRAY = {
             height: 100,
             width: 600,
             gap: true,
-            url: 'https://github.com/HNDRIXX/OJT-Project-DENR-EMB-MIMAROPA/tree/master/-%20Sample%20Pictures',
+            url: 'https://github.com/HNDRIXX/OJT-Project-DENR-EMB-MIMAROPA/blob/master/-%20Sample%20Pictures/01.Home.jpg',
             icons: [
                 { src: IconHTML },
                 { src: IconCSS },
@@ -137,7 +137,7 @@ export const ARRAY = {
             height: 100,
             width: 600,
             leftSpace: '10',
-            url: 'https://github.com/HNDRIXX/Library-Android-Application',
+            url: 'https://github.com/HNDRIXX/UDM-Clinic/blob/master/-%20Sample%20Pictures/01.Register.jpg',
             icons: [
                 { src: IconPython },
                 { src: IconDjango },
@@ -151,7 +151,7 @@ export const ARRAY = {
             description: STRINGS.projDescWebIII,
             height: 100,
             width: 600,
-            url: 'https://github.com/HNDRIXX/Snaps/tree/main/-%20Sample%20Pictures',
+            url: 'https://github.com/HNDRIXX/Snaps/blob/main/-%20Sample%20Pictures/01.%20Login.jpg',
             icons: [
                 { src: IconLaravel },
                 { src: IconBootstrap },
@@ -165,7 +165,7 @@ export const ARRAY = {
             description: STRINGS.projDescWebIV,
             height: 100,
             width: 595,
-            url: 'https://github.com/HNDRIXX/Library-Web/tree/main/-%20Sample%20Pictures',
+            url: 'https://github.com/HNDRIXX/Library-Web/blob/main/-%20Sample%20Pictures/1.Login.jpg',
             icons: [
                 { src: IconHTML },
                 { src: IconCSS },

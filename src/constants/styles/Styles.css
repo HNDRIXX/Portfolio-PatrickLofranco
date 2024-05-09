@@ -88,9 +88,9 @@
     }
 
     .aboutDesc { 
-        @apply w-full text-xs relative bottom-96 px-10 whitespace-pre-wrap
+        @apply w-full text-xs font-light relative bottom-96 px-10 whitespace-pre-wrap drop-shadow-2xl text-center italic
         md:w-full md:text-sm
-        lg:text-xs lg:w-[60rem] lg:px-32 lg:bottom-40
+        lg:text-sm lg:w-[60rem] lg:px-32 lg:bottom-48
     }
 
     .aboutImg { @apply -top-12 lg:top-0 }
