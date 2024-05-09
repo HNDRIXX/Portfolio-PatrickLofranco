@@ -10,10 +10,7 @@ function Projects() {
 
     return (
         <div>
-            <p className="font-regular text-white text-center text-5xl 
-                md:text-6xl
-                lg:text-6xl
-            ">
+            <p className="projectsTitle">
                 {STRINGS.sectionTitleII}
             </p>
 
@@ -22,6 +19,7 @@ function Projects() {
                     <ItemCards
                         item={item}
                         key={index}
+                        index={index}
                     />
                 </LazyLoadComponent>
 

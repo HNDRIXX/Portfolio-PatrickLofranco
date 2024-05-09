@@ -9,24 +9,22 @@ import '../../constants/styles/Styles.css';
 
 type Props = {
     item: any
+    index: number
 }
 
-const ItemCards = memo(({ item }: Props) => {
+const ItemCards = memo(({ item, index }: Props) => {
     return (
         <Fade>
-            <div className={`
-                h-full items-center justify-center overflow-hidden my-10
-                lg:flex lg:snap-always lg:snap-center lg:my-[10em]
-            `}
+            <div className={`itemCardsContainer ${index != 0 && 'lg:my-[10em]'}`}
             >
                 <CardContainer>
-                    <CardBody className={`card-body w-auto h-auto ease-in-out`}>
+                    <CardBody className={`card-body w-auto h-auto ease-in-out px-5 `}>
                         <CardItem translateZ='50' className='w-full'>
                             <LazyLoadImage
                                 src={item?.image}
                                 width={item?.width}
                                 height={item?.height}
-                                className={`image imageCard rounded-xl object-contain ease-in-out`}
+                                className={`image imageCard`}
                                 draggable={false}
                                 alt='Preview'
                             />
@@ -34,31 +32,30 @@ const ItemCards = memo(({ item }: Props) => {
                     </CardBody>
                 </CardContainer>
 
-                <div className={`lg:px-0 lg:pl-10 md:px-32 px-10`}>
+                <div className={`contentWrapper`}>
                     <div>
-                        <p className='text-2xl font-medium text-white dark:text-white 
-                            md:text-3xl
-                            lg:text-3xl
-                        '>
+                        <p className='contentTitle'>
                             {item?.title}
                         </p>
 
-                        <a 
-                            className='flex flex-row items-center gap-2 bg-white rounded-lg py-1 mt-2 mb-5 w-24 justify-center cursor-pointer'
-                            target='_blank'
-                            href={item?.url}
-                        >
-                            <LazyLoadImage
-                                src={IconGithub}
-                                className='w-4'
-                                draggable={false}
-                                alt='Preview'
-                            />
+                        {item?.url && (
+                            <a 
+                                className='linkButton'
+                                target='_blank'
+                                href={item?.url}
+                            >
+                                <LazyLoadImage
+                                    src={IconGithub}
+                                    className='w-4'
+                                    draggable={false}
+                                    alt='Preview'
+                                />
 
-                            <p className='text-black text-sm font-semibold spacing tracking-tight'>
-                                {STRINGS.github}
-                            </p>
-                        </a>
+                                <p className='linkText'>
+                                    {STRINGS.github}
+                                </p>
+                            </a>
+                        )}
                     </div>
 
                     <p className='text-white text-xs mt-2 font-extralight dark:text-white
@@ -75,7 +72,7 @@ const ItemCards = memo(({ item }: Props) => {
                                 src={item.src}
                                 width={30}
                                 height={30}
-                                className='icons image mr-3 w-5 md:w-5 lg:w-6 '
+                                className='scale image mr-3 w-5 md:w-5 lg:w-6 '
                                 alt='Stack'
                             />
                         ))}

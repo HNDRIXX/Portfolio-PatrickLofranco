@@ -19,13 +19,15 @@ function Socials() {
 
         <div className='flex gap-7 lg:gap-10'>
           {ARRAY.Socials.map((item, index) => (
-            <LazyLoadImage
-              key={index}
-              src={item.src}
-              width={50}
-              height={50}
-              className='icons w-9 lg:w-12'
-            />
+            <a href={item?.url} target='_blank'>
+              <LazyLoadImage
+                key={index}
+                src={item.src}
+                width={50}
+                height={50}
+                className='scale w-9 lg:w-12'
+              />
+            </a>
           ))}
         </div>
       </div>

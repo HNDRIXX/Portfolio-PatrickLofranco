@@ -32,6 +32,6 @@ export const STRINGS = {
     projTitleWebIV: 'Web Library Management System',
     projDescWebIV: 'Web Library Management System is the web version of my Mobile Library System Management Capstone Project. The Web Library Management System serves as an expansion of the Mobile Library System Management, offering users a web-based interface for enhanced accessibility.',
 
-    aboutDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odio fugiat autem in facere atque, adipisci assumenda obcaecati impedit ex at reiciendis aut illo unde nulla ratione? Nihil, commodi ducimus.',
+    aboutDesc: `I'm Patrick William Lofranco, and I am a passionate Developer, Designer, and Programmer. With a strong foundation in these fields, I strive to create exceptional digital experiences that combine functionality, aesthetics, and user satisfaction.\n\nFurthermore, my programming skills allow me to take on complex projects and develop customized solutions tailored to specific needs. I enjoy the challenge of problem-solving and take pride in writing clean and efficient code. Whether it's building interactive applications or optimizing existing systems, I am committed to delivering high-quality solutions.`,
     socialDesc: `Passionate about programming and problem-solving, I'm excited to hear about your project – get in touch, and let's embark on a collaborative coding adventure.`,
 }

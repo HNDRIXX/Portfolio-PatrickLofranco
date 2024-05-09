@@ -184,7 +184,7 @@ export const ARRAY = {
 
     Socials: [
         { src: IconGithub, url: 'https://github.com/HNDRIXX'},
-        { src: IconGmail },
-        { src: IconFB }
+        { src: IconGmail, url: 'https://mail.google.com/mail/?view=cm&to=patricklofranco49@gmail.com' },
+        { src: IconFB, url: 'https://www.facebook.com/patrick.lofranco' }
     ]
 }

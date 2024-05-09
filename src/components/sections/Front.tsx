@@ -8,9 +8,9 @@ import "../../constants/styles/Styles.css"
 
 function Welcome() {
   return (
-    <div className="lg:snap-always lg:snap-center">
+    <div className="snapScroll">
       <AuroraBackground
-        className='dark:bg-zinc-950'
+        className='background'
       >
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
@@ -20,7 +20,7 @@ function Welcome() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="relative flex flex-col gap-4 items-center justify-center px-4 "
+          className="motionContainer"
         >
           <div>
             <p className='greet'>
