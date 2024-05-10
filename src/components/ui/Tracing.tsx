@@ -10,7 +10,7 @@ import { cn } from "../../utils/cn";
 
 export const TracingBeam = ({
     children,
-    className,
+className,
 }: {
     children: React.ReactNode;
     className?: string;

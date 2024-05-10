@@ -88,16 +88,15 @@
     }
 
     .aboutDesc { 
-        @apply w-full text-xs font-light relative bottom-96 px-10 whitespace-pre-wrap drop-shadow-2xl text-center italic
-        md:w-full md:text-sm
+        @apply w-full text-xs font-light relative bottom-32 px-10 whitespace-pre-wrap drop-shadow-2xl text-center italic
+        md:text-sm md:w-[40rem] md:bottom-52
         lg:text-sm lg:w-[60rem] lg:px-32 lg:bottom-48
     }
 
     .aboutImg { @apply -top-12 lg:top-0 }
 }                                                                               
 * { 
-    font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif; 
-    /* transition: ease-in-out .3s all;  */
+    font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
 } 
 
 /* Native CSS */
