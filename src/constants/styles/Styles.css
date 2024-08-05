@@ -99,6 +99,10 @@
     font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
 } 
 
+img {
+    pointer-events: none;
+}
+
 /* Native CSS */
 /* Image Card Projects */
 .imageCard:hover {

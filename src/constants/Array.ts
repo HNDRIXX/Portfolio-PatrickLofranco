@@ -37,6 +37,7 @@ import IconPostgre from '../assets/icons/postgre.svg'
 import IconTailwind from '../assets/icons/tailwind.svg'
 import IconNextJS from '../assets/icons/nextjs.svg'
 import IconReactWhite from '../assets/icons/reactwhite.svg'
+import IconTypescriptWhite from '../assets/icons/typescriptwhite.svg'
 
 import IconGithub from '../assets/icons/github.svg'
 import IconGmail from '../assets/icons/gmail.svg'
@@ -177,6 +178,7 @@ export const ARRAY = {
     ],
 
     Stack: [
+        { src: IconTypescriptWhite },
         { src: IconReactWhite },
         { src: IconNextJS },
         { src: IconTailwind }

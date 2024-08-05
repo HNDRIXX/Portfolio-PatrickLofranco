@@ -6,6 +6,7 @@ import { CardBody, CardContainer, CardItem } from '../ui/Card';
 import { STRINGS } from '../../constants';
 import IconGithub from '../../assets/icons/githubblack.svg'
 import '../../constants/styles/Styles.css';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 type Props = {
     item: any
@@ -25,6 +26,10 @@ const ItemCards = memo(({ item, index }: Props) => {
                                 width={item?.width}
                                 height={item?.height}
                                 className={`image imageCard`}
+                                effect="blur"
+                                wrapperProps={{
+                                    style: {transitionDelay: "1s"},
+                                }}
                                 draggable={false}
                                 alt='Preview'
                             />

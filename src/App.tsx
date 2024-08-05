@@ -10,7 +10,7 @@ import { LazyLoadComponent } from 'react-lazy-load-image-component'
 
 function App() {
   return (
-    <main className="snap-y snap-mandatory scroll-smooth overflow-y-scroll h-screen flex-grow z-0">
+    <main className="scroll-smooth overflow-y-scroll h-screen flex-grow z-0">
       <LazyLoadComponent>
         <Welcome />
         <About />

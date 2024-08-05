@@ -3,6 +3,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 import { STRINGS } from '../../constants'
 import '../../constants/styles/Styles.css'
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function About() {
     return (
@@ -17,8 +18,12 @@ function About() {
                     width={630}
                     height={630}
                     className='aboutImg'
-                    alt='Me'
+                    effect="blur"
+                    wrapperProps={{
+                        style: {transitionDelay: "1s"},
+                    }}
                     draggable={false}
+                    alt='Patrick William Lofranco'
                 />
             </div>
 
